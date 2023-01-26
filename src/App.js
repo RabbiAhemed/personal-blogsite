@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import TopBar from "./Components/TopBar/TopBar";
+import Home from "./Components/Pages/Home/Home";
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,7 @@ function App() {
         alt=""
         className="m-5"
       />
+      <Home></Home>
     </div>
   );
 }
