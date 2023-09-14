@@ -1,51 +1,51 @@
 import React from "react";
-import "./TopBar.css";
+import "./Topbar.css";
 import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
-const TopBar = () => {
+const Topbar = () => {
   return (
-    <div>
+    <div className="bg-warning">
       <Navbar expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <h5 className="p-2 menu-item">Stories</h5>
-              <h5 className="p-2 menu-item">DESTINATIONS</h5>
-              <h5 className="p-2 menu-item">GUIDES</h5>
+              <Link to="./stories" className="menu-item">
+                <h5 className="p-2 menu-item">Stories</h5>
+              </Link>
+              <Link to="./" className="menu-item">
+                <h5 className="p-2 menu-item">Destinations</h5>
+              </Link>
+              <Link to=".guides/" className="menu-item">
+                <h5 className="p-2 menu-item">Guides</h5>
+              </Link>
             </Nav>
           </Navbar.Collapse>
           <Navbar.Brand>
-            <img
-              src="https://i.ibb.co/hdfqXF3/new-english-clipdrop-background-removal.png"
-              alt=""
-              width="150"
-              height="150"
-            />
+            <Link to="./">
+              {" "}
+              <img
+                src="https://i.ibb.co/hdfqXF3/new-english-clipdrop-background-removal.png"
+                alt=""
+                width="150"
+                height="150"
+              />
+            </Link>
             {/* <Link to="/">bloodstream</Link> */}
           </Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="" id="right-links">
-              {/* <Link to="/" className="mx-2 fw-bold"> */}
-
-              <h5 className="p-2 menu-item">MEMORIES</h5>
-              <h5 className="p-2 menu-item">RESOURCES</h5>
-              <h5 className="p-2 menu-item">ABOUT</h5>
-
-              {/* </Link> */}
-              {/* <Link to="/about-us" className="mx-2 fw-bold">
-                About Us
-              </Link> */}
-              {/* <Link to="/search-donors" className="mx-2 fw-bold">
-                Search Donors
+              <Link to="./memories" className="menu-item">
+                <h5 className="p-2 menu-item">Memories</h5>
               </Link>
-              <Link to="/blood-requests" className="mx-2 fw-bold">
-                Blood Requests
-              </Link> */}
-              {/* <Link to="/add-blood-request" className="mx-2 fw-bold">
-                Add Blood Request
-              </Link> */}
+              <Link to="./resources" className="menu-item">
+                <h5 className="p-2 menu-item">Resources</h5>
+              </Link>
+              <Link to="./about" className="menu-item">
+                <h5 className="p-2 menu-item">About</h5>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -54,4 +54,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default Topbar;

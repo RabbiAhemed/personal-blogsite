@@ -1,17 +1,11 @@
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/Home/Home";
-import TopBar from "./Components/TopBar/TopBar";
+import router from "./Routes/Routes";
 
 function App() {
   return (
     <div className="App">
-      <TopBar></TopBar>
-      {/* <img
-        src="https://i.ibb.co/fQLqd0m/The-english-lad.png"
-        alt=""
-        className="m-5"
-      /> */}
-      <Home></Home>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
