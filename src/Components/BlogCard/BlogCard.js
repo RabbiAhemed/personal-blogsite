@@ -2,13 +2,14 @@ import React from "react";
 import { Button, Card } from "react-bootstrap";
 
 const BlogCard = ({ blog }) => {
-  const { userId, title, body } = blog;
+  const { id, name, description, image } = blog;
+  // console.log(blog);
   return (
     <Card style={{ width: "100%" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={image} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{body}</Card.Text>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>{description}</Card.Text>
         <Button variant="primary">Read</Button>
       </Card.Body>
     </Card>
