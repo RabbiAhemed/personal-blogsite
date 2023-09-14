@@ -18,7 +18,7 @@ const BlogSection = () => {
           <BlogCard blog={blog} key={blog.id}></BlogCard>
         ))}
       </Container>
-      <Link to="./stories-page">
+      <Link to="./stories">
         <Button variant="warning" className="fw-bold my-4">
           Other Stories...
         </Button>
