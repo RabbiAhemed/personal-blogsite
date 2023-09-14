@@ -5,6 +5,7 @@ import StoriesPage from "../Pages/StoriesPage/StoriesPage";
 import About from "../Pages/About/About";
 import Memories from "../Pages/Memories/Memories";
 import Resources from "../Pages/Resources/Resources";
+import Login from "../Pages/Login/Login";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
     ],
   },

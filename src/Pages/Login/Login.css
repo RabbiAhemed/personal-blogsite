@@ -1,0 +1,52 @@
+#success-text {
+  font-style: italic;
+  font-family: "Exo";
+}
+
+#login-header,
+#login-form,
+#or-text,
+#google-sign-in-btn {
+  font-family: "Exo";
+}
+#google-sign-in-btn {
+  background-color: #f9ca24;
+  border-color: #f9ca24;
+}
+
+@media only screen and (min-width: 768px) {
+  #login-form {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #login-container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #google-icon {
+    width: 40px;
+  }
+  #google-sign-in-btn {
+    background-color: #f9ca24;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #login-form {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #login-container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #success-text {
+    font-size: 1em;
+  }
+  .error-message {
+    font-size: 0.75em;
+  }
+  #google-icon {
+    width: 25px;
+  }
+}

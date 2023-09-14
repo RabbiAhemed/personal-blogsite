@@ -5,7 +5,7 @@ const About = () => {
   useTitle("About - The British Lad");
   return (
     <div>
-      <h1>About Me</h1>
+      <h1 className="me-auto fw-bold">About Me</h1>
       <br />
       <h4>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
